@@ -151,10 +151,10 @@ function gcd(a,b) {
         d=d+1;
     }
     while (a !== b) {
-        if isEven(a) === true {
+        if (isEven(a) === true) {
             a = a/2;
         }
-        else if isEven(b) === true {
+        else if (isEven(b) === true) {
             b = b/2;
         }
         else if (a > b) {
@@ -165,7 +165,7 @@ function gcd(a,b) {
         }
     }
 
-    g = a;
+    let g = a;
 
     return g * 2**d;
 }
